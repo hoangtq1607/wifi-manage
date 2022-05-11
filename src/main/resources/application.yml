@@ -3,3 +3,11 @@ spring:
     url: jdbc:postgresql://localhost:5432/wifi_management
     username: postgres
     password: 1234
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  jackson:
+    property-naming-strategy: SNAKE_CASE
